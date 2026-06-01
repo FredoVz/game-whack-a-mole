@@ -5,14 +5,14 @@ const papanWaktu = document.querySelector(".papan-waktu");
 const pop = document.querySelector("#pop");
 
 let tanahSebelumnya;
-let selesai;
-let skor;
+let selesai = true; //gameAktif atau tidak
+let skor = 0;
 
 function randomTanah(tanah) {
   const t = Math.floor(Math.random() * tanah.length);
   const tRandom = tanah[t];
   if (tRandom == tanahSebelumnya) {
-    randomTanah(tanah);
+    return randomTanah(tanah);
   }
   tanahSebelumnya = tRandom;
   return tRandom;

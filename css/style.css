@@ -9,6 +9,20 @@ h2 {
 button {
   display: block;
   margin: auto;
+  font-size: 2rem;
+  border: none;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3rem;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: #283618;
+  color: #fefae0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fefae0;
+  opacity: 0.8;
 }
 
 .container {
